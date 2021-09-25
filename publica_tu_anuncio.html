@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo3.png">
+    <link rel="stylesheet" href="./Estilo/estilo.css">
+
+    <title>Crea tu cuenta</title>
+</head>
+<body id="estilo" class="login">
+<header>
+    <div class="conteiner navbar">
+        <nav class="menu-nav">
+            <!--            <input type="checkbox" id="menu-desplegable">-->
+            <!--            <label for="menu-desplegable" class="boton-menu"><i class="fas fa-bars"></i></label>-->
+            <a href="index.html" class="logo">Mascotas del Valle<img class="logo" src="img/logo3.png" alt="logo"></a>
+            <ul class="opciones-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mascotas_perdidas.html">Perdidas</a></li>
+                <li><a href="mascotas_encontradas.html">Encontradas</a></li>
+                <li><a href="mascotas_en_adopcion.html">En Adopción</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Publicá</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="conteiner principal"> <!--banner-->
+        <div class="conteiner-texto"> <!--banner content-->
+            <div class="texto-principal"> <!--banner-text-->
+                <h1>¡Publicá tu anuncio!</h1>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<section class="seccion-form">
+
+    <div class="conteiner-form">
+    <div class="formulario">
+        <div class="tipoAnuncio">
+            <h4>Elegi la seccion en la que queres publicar </h4>
+            <ul>
+                <li onclick="cambiarPerdidos()">
+                    <button id="bottonPerdidos">Perdidos</button>
+                </li>
+                <li onclick="cambiarEncontrados()">
+                    <button id="botonEncontrados">Encontrados</button>
+                </li>
+                <li onclick="cambiarEnAdopcion()">
+                    <button id="botonEnAdopcion">En Adopcion</button>
+                </li>
+            </ul>
+        </div>
+        <form class="contenedor-form2" name="formulario">
+            <table>
+                <tr>
+                    <td>Titulo:</td>
+                    <td id="titulo"><input type="text" id="txtTitulo" name="txtTitulo"
+                                           placeholder="Titulo de tu anuncio">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha:</td>
+                    <td id="fecha"><input type="text" id="txtFecha" name="txtFecha" placeholder="Fecha del suceso">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>Localidad:</td>
+                    <td id="localidad"><input type="text" id="txtLocalidad" name="txtLocalidad" placeholder="Localidad">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contacto:</td>
+                    <td id="nro"><input type="number" id="txtNro" name="txtNro" placeholder="Nro de telefono opcional">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td id="email"><input type="text" id="txtEmail" name="txtEmail" placeholder="juanperez@gmail.com">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>Descripcion:</td>
+                    <td id="descripcion"><input type="text" maxlength="175"  id="txtDescripcion" name="txtDescripcion"
+                                                placeholder="Descripcion de tu mascota">*
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carga una foto</td>
+                    <td>  <input type="file" id="file" accept="image/*" onchange="cargarFoto()"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="botonRegistro" value="Publicar" onclick="return validarAnuncio()"></td>
+                    <td><input type="button" hidden id="botonRegistro2" value="Publicar otro anuncio" onclick="recargarPagina()"></td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="tarjeta-anuncio">
+            <br>
+            <div class="imagen-anuncio">
+                <img src="img" hidden id="imagen-anuncio" alt="imagen anuncio"/>
+            </div>
+            <div id="anuncio">
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="conteiner-footer">
+        <div class="texto-footer">
+            <h4> Programacion Estatica y Laboratorio Web</h4>
+            <h4> Leandro Gabriel Fuentes - FAI-465</h4>
+            <h4> Leandro.fuentes@est.fi.uncoma.edu.ar</h4>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="loginmascotas.js"></script>
+<script type="text/javascript" src="tipoAnuncio.js"></script>
+</body>
+</html>

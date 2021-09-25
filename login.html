@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo3.png">
+    <link rel="stylesheet" href="./Estilo/estilo.css">
+
+    <title>Login</title>
+</head>
+<body class="login">
+<header>
+    <div class="conteiner navbar">
+        <nav class="menu-nav">
+            <!--            <input type="checkbox" id="menu-desplegable">-->
+            <!--            <label for="menu-desplegable" class="boton-menu"><i class="fas fa-bars"></i></label>-->
+            <a href="index.html" class="logo">Mascotas del Valle<img class ="logo" src="img/logo3.png" alt="logo"></a>
+            <ul class="opciones-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mascotas_perdidas.html">Perdidas</a></li>
+                <li><a href="mascotas_encontradas.html">Encontradas</a></li>
+                <li><a href="mascotas_en_adopcion.html">En Adopción</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Publicá</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="conteiner principal"> <!--banner-->
+        <div class="conteiner-texto"> <!--banner content-->
+            <div class="texto-principal"> <!--banner-text-->
+                <!--                <h1>BIENVENIDO A MASCOTAS DEL VALLE</h1>-->
+                <h3>Ingrese su usuario y contraseña</h3>
+            </div>
+        </div>
+    </section>
+</header>
+
+<section class="seccion-form">
+
+<div class="formulario">
+    <div class="contenedor-form">
+    <form name ="formulario">
+        <table>
+            <tr>
+                <td>Email</td><td><input type="text" id="emailLogin" name="emailLogin" placeholder="usuario@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Contraseña</td><td><input type="text" id="contraseniaLogin" name="contraseniaLogin" placeholder="contraseña1234"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="botonRegistr" value="Ingresar" onclick="return loginValido()"></td>
+            </tr>
+        </table>
+    </form>
+    <a href="cuenta.html">¿No tenes cuenta? Registrate</a>
+    </div>
+</div>
+</section>
+
+
+
+
+<footer>
+    <div class="conteiner-footer">
+        <div class="texto-footer">
+            <h4> Programacion Estatica y Laboratorio Web</h4>
+            <h4> Leandro Gabriel Fuentes - FAI-465</h4>
+            <h4> Leandro.fuentes@est.fi.uncoma.edu.ar</h4>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="loginmascotas.js"></script>
+</body>
+</html>
