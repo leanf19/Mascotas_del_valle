@@ -45,11 +45,11 @@ header .texto-principal {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: "Arial Rounded MT Bold";
+    font-family: 'Gluten', cursive;
 }
 
 .texto-principal h1 {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: bolder;
     color: rgb(20, 18, 42);
     margin-top: 70px;
@@ -60,7 +60,7 @@ header .texto-principal {
 
 .texto-principal h3 {
     /*margin-bottom: 15px;*/
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
     font-weight: bold;
     color: #fffdfd;
@@ -141,7 +141,7 @@ main {
 }
 
 .link-titulo {
-    font-family: "Arial Rounded MT Bold";
+    font-family: 'Gluten', cursive;
     font-size: 2.5em;
     color: black;
     margin-top: 40px;
@@ -386,6 +386,7 @@ nav {
     padding-right: 10px;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Gluten', cursive;
 }
 
 .perdidos nav {
@@ -482,6 +483,7 @@ footer {
     padding-top: 40px;
     height: 100px;
     margin-top: 80px;
+    font-family: 'Gluten', cursive;
 }
 
 .perdidos footer {
@@ -514,6 +516,7 @@ footer {
     background: linear-gradient(to right, #f7797d, #9a8030, #326d4c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 80px;
     margin-top: 150px;
+    font-family: 'Gluten', cursive;
 }
 
 .login footer {
@@ -635,15 +638,17 @@ footer {
 }
 
 .contenedor-form2 {
+    display: flex;
+    justify-content: center;
     width: 450px;
     height: 300px;
     border-style: groove;
     border-radius: 12px;
     border-width: 5px;
     padding-left: 10px;
-    background: #bdc3c7; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c3e50, rgba(189, 195, 199, 0.73)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2c3e50, rgba(189, 195, 199, 0.58)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #eae1e1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d75de5, #ce9f9f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #935099, #391010); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fdf4fa;
 }
 
@@ -737,9 +742,9 @@ footer {
     border-color: #000;
     border-radius: 15px;
     display: block;
-    background: #bdc3c7; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c3e50, rgba(189, 195, 199, 0.73)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2c3e50, rgba(189, 195, 199, 0.58)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #eae1e1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d75de5, #ce9f9f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #935099, #391010); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-bottom: 50px;
     position: fixed;
     left: 45%;
@@ -826,6 +831,17 @@ footer {
     left: 120px;
     background: deepskyblue;
 
+
+}
+#botonEnviar{
+    font-size: 13px;
+    font-style: oblique;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 10px;
+    left: 120px;
+    background: rgba(19, 139, 49, 0);
+
 }
 
 .conteiner-form {
@@ -862,8 +878,8 @@ footer {
     font-size: 20px;
     border-radius: 10px;
     margin: 20px;
-    background: rgba(215, 211, 211, 0.56);
-    color: #a00a0a;
+    background: rgba(215, 211, 211, 0.49);
+    color: #820606;
 
 }
 
@@ -891,6 +907,7 @@ footer {
 
 .titulo-redes {
     color: #870000;
+    font-family: 'Gluten', cursive;
 }
 
 .titulo-redes h3 {
@@ -917,10 +934,10 @@ footer {
     border-radius: 10px;
     width: 400px;
     height: 150px;
-    background: #2c3e50; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3498db, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #489260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #ba9b45, #2f6f55);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #9a8030, #326d4c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Gluten', cursive;
 }
 
 
